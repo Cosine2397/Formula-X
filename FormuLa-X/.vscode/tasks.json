@@ -1,0 +1,56 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Project",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "pro_xxx.cpp",
+        "transpose.cpp",
+        "caeser.cpp",
+        "-o",
+        "project",
+        "-std=c++17"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "C/C++: clang++ build active file",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "pro_xxx.cpp",
+        "transpose.cpp",
+        "caeser.cpp",
+        "-o",
+        "project",
+        "-std=c++17"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run FormuLa-X",
+      "type": "shell",
+      "command": "./project",
+      "dependsOn": ["Build Project"],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

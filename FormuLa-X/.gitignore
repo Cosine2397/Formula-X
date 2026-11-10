@@ -1,0 +1,25 @@
+# Compiled binaries
+project
+project.exe
+*.exe
+*.o
+*.obj
+*.out
+*.app
+
+# Temporary files and data
+temp.txt
+*.tmp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Python bytecode
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# VS Code user-specific cache
+.vscode/.browse.c_cpp.db*
